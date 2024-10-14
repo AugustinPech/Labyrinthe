@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille Aléatoire</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center my-4">
+        <div class="controls mb-4">
+            <label for="rows">Lignes (y) :</label>
+            <input type="number" id="rows" class="form-control d-inline-block w-auto" value="6" min="1">
+            <label for="cols">Colonnes (x) :</label>
+            <input type="number" id="cols" class="form-control d-inline-block w-auto" value="7" min="1">
+            <button id="generate" class="btn btn-primary">Générer</button>
+            <button id="resolve" class="btn btn-danger">Résoudre</button>
+        </div>
+    </div>
+
+    <div id="grid-container" class="grid-wrapper"></div>
+</body>
+</html>
